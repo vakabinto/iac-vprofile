@@ -6,7 +6,7 @@ on:
       - stage
     paths:
       - terraform/**
-   pull_request:
+  pull_request:
     branches:
        - main
     paths:
@@ -50,7 +50,7 @@ jobs:
               id: plan
               run: terraform plan -no-color -input false -out planfile
               continue-on-error: true 
-              
+
             - name: terraform plan status
               if: steps.plan.outcome == 'failure'
               run: exit 1
