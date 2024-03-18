@@ -10,6 +10,3 @@ variable "clusterName" {
   default     = "node_iac"
 }
 ##value of test
-
-
-##
