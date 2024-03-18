@@ -9,7 +9,3 @@ variable "clusterName" {
   type        = string
   default     = "node_iac"
 }
-
-##
-##
-##
