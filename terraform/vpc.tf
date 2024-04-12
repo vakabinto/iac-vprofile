@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.1.2"
+  version = "~> 5.0.0"
 
   name = "vprofile-eks"
 
@@ -24,3 +24,4 @@ module "vpc" {
     "kubernetes.io/role/internal-elb"             = 1
   }
 }
+#
