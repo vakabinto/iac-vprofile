@@ -56,6 +56,7 @@ jobs:
               run: exit 1
 
             - name: terraform apply
+              id: apply
               if: github.ref == 'refs/heads/main' && github.event_name == 'push'
               run: terraform apply -auto-approve -input=false -parallelism=1 planfile
 
