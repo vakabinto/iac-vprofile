@@ -49,7 +49,7 @@ jobs:
         run: terraform validate
       - name: terraform plan
         id: plan
-        run: terraform plan -no-color -input=false -output planfile
+        run: terraform plan -no-color -input=false -out planfile
       - name: terraform plan validate
         id: validate
         if: steps.plan == failure()
