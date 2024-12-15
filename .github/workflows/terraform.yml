@@ -36,6 +36,8 @@ jobs:
         uses: actions/checkout@v4
       - name: setup teraform with version runner
         uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.6.3 # Specify the required version
       - name: terraform init
         id: init
         run: terraform init -backend-config="bucket=$BUCKET_TF_STATE"
