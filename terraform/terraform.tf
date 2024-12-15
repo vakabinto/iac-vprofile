@@ -27,7 +27,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "relia2023"
+    bucket = "iac-vprofile001"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
